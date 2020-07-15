@@ -1,7 +1,27 @@
 /*Headers*/
-h1 {
-  background-color: #05668D;
-  display: block;
+header {
+  background-color:#05668D;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li a:link {
+  color: #F0F3BD;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li a:visited {
+  color: #F0F3BD;
+}
+
+header h1 {
   color: #F0F3BD;
   text-align: center;
   font-size: 46px;
@@ -47,32 +67,52 @@ li {
   font-size: 18px;
 }
 
-footer{
-  background-color: #05668D;
-  color: #F0F3BD;
-  text-align: right;
-  display: block;
-  font-size: 20px;
-}
-
-footer iframe {
+iframe {
+  display: flex;
   margin-right: 260px;
-}
-
-footer h3 {
-  text-align: right;
+  margin-left: 75px;
 }
 
 footer a:link{
+  margin: 0 20px 0 0;
+}
+
+footer {
+  display:flex;
+  justify-content: center;
+}
+
+form {
+  margin-left: 150px;
+  margin-right: 25px;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
   color: #F0F3BD;
+  text-align: left;
+}
+
+form input[type=text] {
+  height: 18px;
+  font-size: 16px;
+  width: 100%;
+}
+
+form textarea {
+  height: 4.75rem;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
 }
 
 a:link {
-  color: #ff5400;
+  color: #05668D;
 }
 
 a:visited {
-  color: #ffff3f;
+  color: #ff5400;
 }
 
 /*Groups & Items-Mobile*/
@@ -96,15 +136,21 @@ a:visited {
 }
 
 /*Groups & Items-Desktop*/
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
   .wrapper {
     width: 80%;
     margin: auto;
   }
 
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .group {
     flex-direction: row;
   }
+  
 }
 
 /*Article Sections*/
@@ -113,6 +159,10 @@ a:visited {
   color: #028090;
   text-align: justify;
   margin-right: 20px;
+}
+
+#home img {
+  margin-top: 15px;
 }
 
 #about, #services {
@@ -149,5 +199,11 @@ a:visited {
 #services a:link {
   color: #F0F3BD;
 }
+
+#contact {
+  padding-top: 10px;
+  background-color:#05668D;
+}
+
 
 
